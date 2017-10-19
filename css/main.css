@@ -1,11 +1,12 @@
 .main{
-    position: absolute;
+    position: relative;
     background-color: rgb(88, 175, 88);
     width: 750px;
     height: 400px;
 }
 .second{
-    position: relative;
+    
+    position: absolute;
     border: 3px solid white;
     height: 350px;
     width: 700px;
@@ -15,7 +16,7 @@
 
 }
 .arc-rigth{
-    position: relative;
+    position: absolute;
     border: 3px solid white;
     height: 110px;
     width: 50px;
@@ -23,14 +24,15 @@
     right: 0px;
 }
 .arc-left{
-    position: relative;
+    position: absolute;
     border: 3px solid white;
     height: 110px;
     width: 50px;
-    top:7px;
-    left: 645px;
+    top:125px;
+    left: 0px;
 }
 .circucle{
+    /*toma posicion partir del elemento main relative */
     position: absolute;
     border: 3px solid white;
     height: 150px;
@@ -39,11 +41,34 @@
     left: 290px;
     border-radius:100%
 }
-.ball{
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+.ball1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: white; 
+    display: inline-block;
+    top:151px;
+    left: 72px;
+}
+.ball2{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white; 
+    display: inline-block;
+    top:80px;
+    left: 410px;
+}
+.ball3{
+     /*toma posicion partir del elemento main relative */
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white; 
+    display: inline-block;
+    top:230px;
+    right: 85px;
 }
